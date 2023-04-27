@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="myApp.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-fluid bg-site">
+        <div class="logo">
+            <img src="img/logoapp1.png" alt="">
+            <div class="logo_text">
+                <span><h1>Günlük</h1></span>
+                <span><h2>Planlarım . . .</h2></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="text-center"> Hadi Görevlerini Ekle <i class="fa-solid fa-paperclip"></i></p>
+                        </div>
+                        <div class="card-body">
+                           <form>
+                                <div class="input-group">
+                                    <input id="txtTaskName" type="text" class="form-control" placeholder="Hangi görevleri eklemek istiyorsun ?">
+                                    <button id="btnAddNewTask" type="submit" class="btn btn-primary">Ekle</button>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header controls">
+                            <div class="filters">
+                                <span id="all" class="active">Hepsi</span>
+                                <span id="pending">Yapılacaklar</span>
+                                <span id="completed">Tamamlananlar</span>
+                            </div>
+                            <button id="btnClear" class="btn btn-sm btn-danger">Temizle</button>
+                        </div>
+                        <ul id="plan-list" class="list-group list-group-flush">
+                            <!-- <li class="task list-group-item">
+                                <div class="from-check">
+                                    <input type="checkbox" id="1" class="form-check-input">
+                                    <label for="1" class="form-check-label">Görev 1</label>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#"> <i class="fa-regular fa-pen-to-square"></i> Düzenle</a></li>
+                                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-trash-can"></i> Temizle</a></li>
+                                  </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="myApp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

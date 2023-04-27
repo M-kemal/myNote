@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--grey: #6B7280;
+	--orange: #F47C00;
+	--yellow: #F4C303;
+	--light: #EEE;
+    --red: #DE2B2B;
+    --purple: #8B5CF6;
+    --purple2: #937DC2;
+    --black: #181818;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--black);
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.logo_text {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1;
+    margin-left: -40px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, var(--red), var(--orange), var(--yellow));
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+}
+
+.logo_text span>h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+
+.logo_text span>h2 {
+    margin-top: -35px;
+    margin-left: 5px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* ------------------------------------------------ */
+
+/* CARD 2 */
+
+.task label.checked {
+    text-decoration: line-through;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.filters span {
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--light);
+}
+
+.filters span.active {
+    color: var(--orange);
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to left, var(--purple), var(--orange), var(--purple));
+    color: var(--light);
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.bg-site {
+    background: var(--black);
+    height: 100%;
+}
+
+.btn-primary {
+   background: var(--orange);
+   border: none;
+}
+
+.btn-primary:hover {
+    background: var(--yellow) !important;
+ }
+
+ .btn-danger {
+    background: var(--orange);
+    border: none;
+ }
+
+ .btn-danger:hover {
+    background: var(--yellow) !important;
+ }
+
+ .btn-link {
+    color: var(--light);
+ }
+
+ .btn-link:hover{
+    color: var(--orange) !important;
+ }
+
+ .card {
+    background-image: linear-gradient(to left, var(--purple), var(--orange), var(--purple));
+    color: var(--light);
+    /* overflow-y: scroll; */
+    overflow:scroll;
+	
+ }
+
+ .card .card-header {
+    color: var(--light);
+ }
+
+ .card-header p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+ }
+
+ #plan-list p {
+    margin-top: 10%;
+    font-size: 2rem;
+ }
+
+ ::placeholder {
+    background-image: linear-gradient(to left, var(--purple), var(--orange), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+ }
+
+ .dropdown li:first-child {
+    border-bottom: 1px dotted var(--dark);
+ }
+
+ .dropdown a {
+    background-image: linear-gradient(to left, var(--purple), var(--orange), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+ }
+
+ .dropdown a:hover {
+    background-image: linear-gradient(to top, var(--purple), var(--orange), var(--purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+ }
+
+ .form-check-input:checked {
+    background-color: var(--orange);
+    border-color: var(--yellow);
+}
+
+.form-check-input:focus {
+    border-color: var(--yellow);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(244,195,3,.25);
+}
+
+@media (max-width: 575.98px) { 
+
+    .logo {
+        margin-left: -15px
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .logo_text {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1;
+        margin-left: -25px;
+        text-transform: uppercase;
+        background-image: linear-gradient(to top, var(--red), var(--orange), var(--yellow));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+    }
+    
+    .logo_text span>h1 {
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    
+    .logo_text span>h2 {
+        margin-top: -20px;
+        margin-left: 5px;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+
+    ::placeholder {
+        font-size: .75rem;
+     }
+
+     .card-header .filters{
+        font-size: .66rem;
+        font-weight: 900;
+        text-shadow: 1px 1px 4px black;
+     }
+
+     .btn-danger {
+        --bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;
+     }
+
+     .card-header p {
+        text-shadow: 1px 1px 4px black;
+
+    
+     }
+
+     .controls .list-group {
+        height: 40vh !important;
+     }
+
+     #plan-list p {
+
+        margin-top: 30%;
+     }
+     
+}   
